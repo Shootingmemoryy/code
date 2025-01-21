@@ -42,12 +42,13 @@ public class UserAPI {
             user.setPassword(password);
             userMapper.insert(user);
             log.info("注册成功！"+user);
-
+            user.setPassword("");
 
         }catch (DuplicateKeyException e){
             user=new User();
+            log.info("注册失败！用户名已存在"+username);
         }
-        user.setPassword(password);
+
         return user;
     }
 }
