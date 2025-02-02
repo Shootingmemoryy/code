@@ -100,7 +100,7 @@
     background-color: rgb(38, 41, 46);
 
     border-radius: 5px;
-    background-image: url(../img/搜索.png);
+    background-image: url(../img/sreach.png);
     background-repeat: no-repeat;
     background-size: 20px 20px;
     background-position: center center;
@@ -120,7 +120,7 @@
     height: 100%;
     width: 50%;
 
-    background-image: url(../img/对话.png);
+    background-image: url(../img/Chat.png);
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: center center;
@@ -131,7 +131,7 @@
     height: 100%;
     width: 50%;
 
-    background-image: url(../img/用户2.png);
+    background-image: url(../img/User.png);
     background-repeat: no-repeat;
     background-size: 30px 30px;
     background-position: center center;
