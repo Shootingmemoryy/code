@@ -5,6 +5,7 @@ import com.bite.java_chartoom.model.UserMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -49,6 +50,22 @@ public class UserAPI {
             log.info("注册失败！用户名已存在"+username);
         }
 
+        return user;
+    }
+    @GetMapping("/userInfo")
+    @ResponseBody
+    public Object getUserInfo(HttpServletRequest request){
+        HttpSession session=request.getSession(false);
+        if(session==null){
+            log.info("[getUserInfo] session is null");
+            return new User();
+        }
+        User user=(User)session.getAttribute("user");
+        if(user==null){
+        log.info("[getUserInfo] user is null");
+        return new User();
+        }
+        user.setPassword("");
         return user;
     }
 }

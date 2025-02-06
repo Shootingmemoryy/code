@@ -17,3 +17,26 @@ function initSwitchTab() {
     }
 }
 initSwitchTab();
+function getUserInfo() {
+    $.ajax({
+        type: 'get',
+        url: 'userInfo',
+        success: function(body) {
+            // 从服务器获取到数据.
+            // 校验结果是否有效.
+            if (body.userId && body.userId > 0) {
+                // 如果结果有效, 则把用户名显示到界面上.
+                // 同时也可以记录 userId 到 html 标签的属性中. (以备后用)
+                let userDiv = document.querySelector('.main .left .user');
+                userDiv.innerHTML = body.username;
+                userDiv.setAttribute("user-id", body.userId);
+            } else {
+                // 如果结果无效, 当前未登录! 则跳转到登录页面.
+                alert("当前用户未登录!");
+                location.assign('login.html');
+            }
+        }
+    });
+}
+
+getUserInfo();
