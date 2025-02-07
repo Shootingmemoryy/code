@@ -40,3 +40,23 @@ function getUserInfo() {
 }
 
 getUserInfo();
+function getFridendList() {
+ $.ajax({
+    type: 'get';
+    url: 'friendList',
+    success: function(body) {
+        let friendListUL = document.querySelector('#friend-List');
+        friendListUL.innerHTML = '';
+        for(let friend of body) {
+            let li = document.createElement('li');
+            li.innerHTML = '<h4>'+friend.frindName+'</h4>';
+            li.setAttribute("friend-id", friend.friendId);
+            friendListUL.appendChild(li);
+        }
+    }
+    error:function () {
+        alert("获取好友列表失败!");
+        
+    }
+ });
+}
