@@ -42,7 +42,7 @@ function getUserInfo() {
 getUserInfo();
 function getFridendList() {
  $.ajax({
-    type: 'get';
+    type: 'get',
     url: 'friendList',
     success: function(body) {
         let friendListUL = document.querySelector('#friend-List');
