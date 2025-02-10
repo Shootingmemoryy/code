@@ -5,6 +5,4 @@
         select userId as friendId,username as friendName from user
         where userId in (select friendId from friend where userId =#{userId})
     </select>
-
-
 </mapper>
