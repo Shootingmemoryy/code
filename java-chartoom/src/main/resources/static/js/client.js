@@ -40,23 +40,67 @@ function getUserInfo() {
 }
 
 getUserInfo();
-function getFridendList() {
+function getFriendList() {
  $.ajax({
     type: 'get',
     url: 'friendList',
     success: function(body) {
-        let friendListUL = document.querySelector('#friend-List');
+        let friendListUL = document.querySelector('#friend-list');
         friendListUL.innerHTML = '';
         for(let friend of body) {
             let li = document.createElement('li');
-            li.innerHTML = '<h4>'+friend.frindName+'</h4>';
+            li.innerHTML = '<h4>' + friend.friendName+'</h4>';
             li.setAttribute("friend-id", friend.friendId);
             friendListUL.appendChild(li);
         }
-    }
+    },
     error:function () {
         alert("获取好友列表失败!");
-        
+
     }
  });
+}
+getFriendList();
+function getSessionList() {
+    $.ajax({
+        type: 'get',
+        url: 'sessionList',
+        success: function(body) {
+            let sessionListUL = document.querySelector('#session-list');
+            sessionListUL.innerHTML = '';
+            for (let session of body) {
+                if (session.lastMessage.length > 10){
+            session.lastMessage = session.lastMessage.substring(0, 10) + '...';
+        }
+                 let li = document.createElement('li');
+                 li.setAttribute("session-id", session.sessionId);
+                 li.innerHTML = '<h3>' + session.friend[0].friendName+'</h3>'+'<p>'+session.lastMessage+'</p>';
+                 sessionListUL.appendChild(li);
+             }
+            li.onclick = function() {
+                // 这个写法, 就能保证, 点击哪个 li 标签
+                // 此处对应的 clickSession 函数的参数就能拿到哪个 li 标签.
+                clickSession(li);
+            }
+        }
+    });
+}
+getSessionList();
+function clickSession(currentLi) {
+    // 1. 设置高亮
+    let allLis = document.querySelectorAll('#session-list>li');
+    activeSession(allLis, currentLi);
+    // 2. 获取指定会话的历史消息 TODO
+    let sessionId = currentLi.getAttribute("message-session-id");
+    getHistoryMessage(sessionId);
+}
+function activeSession(allLis, currentLi) {
+    // 这里的循环遍历, 更主要的目的是取消未被选中的 li 标签的 className
+    for (let li of allLis) {
+        if (li == currentLi) {
+            li.className = 'selected';
+        } else {
+            li.className = '';
+        }
+    }
 }

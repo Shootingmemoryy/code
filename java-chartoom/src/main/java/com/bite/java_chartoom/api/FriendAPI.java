@@ -23,14 +23,14 @@ import java.util.List;
 public class FriendAPI {
     @Resource
     private FriendMapper friendMapper;
-    @GetMapping("/ friendList")
+    @GetMapping("/friendList")
     @ResponseBody
     public Object friendList(HttpServletRequest request){
         HttpSession session = request.getSession(false);
         if(session == null){
             return new ArrayList<Friend>();
         }
-        log.info("[getFriendList] session 不存在");
+
         User user = (User) session.getAttribute("user");
         if(user == null){
             log.info("[getFriendList] user 不存在");
