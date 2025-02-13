@@ -76,12 +76,12 @@ function getSessionList() {
                  li.setAttribute("session-id", session.sessionId);
                  li.innerHTML = '<h3>' + session.friend[0].friendName+'</h3>'+'<p>'+session.lastMessage+'</p>';
                  sessionListUL.appendChild(li);
+                li.onclick = function() {
+                    // 这个写法, 就能保证, 点击哪个 li 标签
+                    // 此处对应的 clickSession 函数的参数就能拿到哪个 li 标签.
+                    clickSession(li);
+                }
              }
-            li.onclick = function() {
-                // 这个写法, 就能保证, 点击哪个 li 标签
-                // 此处对应的 clickSession 函数的参数就能拿到哪个 li 标签.
-                clickSession(li);
-            }
         }
     });
 }
@@ -103,4 +103,35 @@ function activeSession(allLis, currentLi) {
             li.className = '';
         }
     }
+}
+function getHistoryMessage(sessionId) {
+    console.log("获取历史消息 sessionId=" + sessionId);
+    // 1. 先清空右侧列表中的已有内容
+    let titleDiv = document.querySelector('.right .title');
+    titleDiv.innerHTML = '';
+    let messageShowDiv = document.querySelector('.right .message-show');
+    messageShowDiv.innerHTML = '';
+
+    // 2. 重新设置会话的标题. 新的会话标题是点击的那个会话上面显示的标题
+    //    先找到当前选中的会话是哪个. 被选中的会话带有 selected 类的.
+    let selectedH3 = document.querySelector('#session-list .selected>h3');
+    if (selectedH3) {
+        // selectedH3 可能不存在的. 比如页面加载阶段, 可能并没有哪个会话被选中.
+        // 也就没有会话带有 selected 标签. 此时就无法查询出这个 selectedH3
+        titleDiv.innerHTML = selectedH3.innerHTML;
+    }
+    // 3. 发送 ajax 请求给服务器, 获取到该会话的历史消息.
+    $.ajax({
+        type: 'get',
+        url: 'message?sessionId=' + sessionId,
+        success: function(body) {
+            // 此处返回的 body 是个 js 对象数组, 里面的每个元素都是一条消息.
+            // 直接遍历即可.
+            for (let message of body) {
+                addMessage(messageShowDiv, message);
+            }
+            // 加个操作: 在构造好消息列表之后, 控制滚动条, 自动滚动到最下方.
+            scrollBottom(messageShowDiv);
+        }
+    });
 }
