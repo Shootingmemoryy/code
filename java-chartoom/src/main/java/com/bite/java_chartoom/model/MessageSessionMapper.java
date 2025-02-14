@@ -6,7 +6,7 @@ import java.util.List;
  * @Shootingmemory
  * @create 2025-02-12-23:33
  */
-public class MessageSessionMapper {
+public interface MessageSessionMapper {
     List<Integer> getSessionIdsByUserId(int userId);
     List<Friend> getFriendListByUserId(int userId,int selfUserId);
 }

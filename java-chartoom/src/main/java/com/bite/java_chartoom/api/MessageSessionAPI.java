@@ -1,7 +1,9 @@
 package com.bite.java_chartoom.api;
 
+import com.bite.java_chartoom.model.Friend;
 import com.bite.java_chartoom.model.MessageSession;
 import com.bite.java_chartoom.model.MessageSessionMapper;
+import com.bite.java_chartoom.model.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -31,7 +33,20 @@ public class MessageSessionAPI {
         log.info("[getMessageSessionList] 当前用户未登录!");
         return  messageSessionList;
         }
-
+        User user = (User) session.getAttribute("user");
+        if(user == null){
+            log.info("[getMessageSessionList] 当前用户未登录!");
+            return messageSessionList;
+        }
+       List<Integer> sessionIdList =  messageSessionMapper.getSessionIdsByUserId(user.getUserId());
+       for (Integer sessionId : sessionIdList) {
+           MessageSession messageSession = new MessageSession();
+           List <Friend> friends = messageSessionMapper.getFriendListByUserId(sessionId, user.getUserId());
+            messageSession.setFriends(friends);
+            messageSession.setLastMessage("nihao");
+            messageSessionList.add(messageSession);
+       }
+        return messageSessionList;
     }
 
 }
