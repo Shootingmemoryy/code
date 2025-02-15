@@ -41,7 +41,7 @@ public class MessageSessionAPI {
        List<Integer> sessionIdList =  messageSessionMapper.getSessionIdsByUserId(user.getUserId());
        for (Integer sessionId : sessionIdList) {
            MessageSession messageSession = new MessageSession();
-           List <Friend> friends = messageSessionMapper.getFriendListByUserId(sessionId, user.getUserId());
+           List <Friend> friends = messageSessionMapper.getFriendsBySessionId(sessionId, user.getUserId());
             messageSession.setFriends(friends);
             messageSession.setLastMessage("nihao");
             messageSessionList.add(messageSession);

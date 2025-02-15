@@ -8,11 +8,11 @@
         order by lastTime desc
     </select>
 
-<select id="getFriendListByUserId" resultType="com.bite.java_chartoom.model.Friend">
-    select userId as friendId, username as friendName from user
-    where userId in
-          (select userId from message_session_user where sessionId = #{sessionId} and userId != #{selfUserId})
-</select>
+    <select id="getFriendsBySessionId" resultType="com.bite.java_chartoom.model.Friend">
+        select userId as friendId, username as friendName from user
+        where userId in
+              (select userId from message_session_user where sessionId = #{sessionId} and userId != #{selfUserId})
+    </select>
     <insert id="addMessageSession" useGeneratedKeys="true" keyProperty="sessionId">
         insert into message_session values(null, now());
     </insert>
