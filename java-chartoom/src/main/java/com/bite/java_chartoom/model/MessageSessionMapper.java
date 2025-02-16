@@ -1,6 +1,7 @@
 package com.bite.java_chartoom.model;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -11,5 +12,6 @@ import java.util.List;
 @Mapper
 public interface MessageSessionMapper {
     List<Integer> getSessionIdsByUserId(int userId);
-    List<Friend> getFriendsBySessionId(int sessionId, int selfUserId);
+    List<Friend> getFriendsBySessionId(@Param("sessionId") int sessionId, @Param("selfUserId") int selfUserId);
+
 }
