@@ -1,24 +1,27 @@
 package com.bite.java_chartoom.api;
 
 
-import com.bite.java_chartoom.model.Friend;
-import com.bite.java_chartoom.model.MessageSession;
-import com.bite.java_chartoom.model.MessageSessionMapper;
-import com.bite.java_chartoom.model.User;
+import com.bite.java_chartoom.model.*;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 
+import java.util.HashMap;
 import java.util.List;
-
+@Slf4j
 @RestController
 public class MessageSessionAPI {
     @Resource
     private MessageSessionMapper messageSessionMapper;
-
+    @Autowired
+    private MessageSourceAutoConfiguration messageSourceAutoConfiguration;
 
 
     @GetMapping("/sessionList")
@@ -50,5 +53,27 @@ public class MessageSessionAPI {
         }
         // 最终目标就是构造出一个 MessageSession 对象数组
         return messageSessionList;
+    }
+    @PostMapping("/session")
+    public Object addMessageSession(int toUserId, HttpServletRequest request) {
+        HashMap <String,Integer> resp =new HashMap<>();
+        MessageSession messageSession =new MessageSession();
+       HttpSession session = request.getSession(false);
+       if(session==null){
+            log.info("session == null");
+            return new MessageSession();
+       }
+        User user = (User) session.getAttribute("user");
+       messageSessionMapper.addMessageSession(messageSession);
+        MessageSessionUserItem item1 =new MessageSessionUserItem();
+        item1.setSessionId(messageSession.getSessionId());
+        item1.setUserId(user.getUserId());
+        messageSessionMapper.addMessageSessionUser(item1);
+        MessageSessionUserItem item2 =new MessageSessionUserItem();
+        item2.setSessionId(messageSession.getSessionId());
+        item2.setUserId(toUserId);
+        messageSessionMapper.addMessageSessionUser(item2);
+        resp.put("sessionId",messageSession.getSessionId());
+        return resp;
     }
 }

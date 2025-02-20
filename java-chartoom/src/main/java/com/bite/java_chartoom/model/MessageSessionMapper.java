@@ -13,5 +13,6 @@ import java.util.List;
 public interface MessageSessionMapper {
     List<Integer> getSessionIdsByUserId(int userId);
     List<Friend> getFriendsBySessionId(@Param("sessionId") int sessionId, @Param("selfUserId") int selfUserId);
-
+    int addMessageSession(MessageSession messageSession);
+    void addMessageSessionUser(MessageSessionUserItem messageSessionUserItem);
 }
