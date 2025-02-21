@@ -5,6 +5,7 @@ import com.bite.java_chartoom.model.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -20,9 +21,6 @@ import java.util.List;
 public class MessageSessionAPI {
     @Resource
     private MessageSessionMapper messageSessionMapper;
-    @Autowired
-    private MessageSourceAutoConfiguration messageSourceAutoConfiguration;
-
 
     @GetMapping("/sessionList")
     @ResponseBody
@@ -55,17 +53,19 @@ public class MessageSessionAPI {
         return messageSessionList;
     }
     @PostMapping("/session")
+    @ResponseBody
+    @Transactional
     public Object addMessageSession(int toUserId, HttpServletRequest request) {
         HashMap <String,Integer> resp =new HashMap<>();
-        MessageSession messageSession =new MessageSession();
+        MessageSession messageSession = new MessageSession();
        HttpSession session = request.getSession(false);
        if(session==null){
             log.info("session == null");
             return new MessageSession();
        }
         User user = (User) session.getAttribute("user");
-       messageSessionMapper.addMessageSession(messageSession);
-        MessageSessionUserItem item1 =new MessageSessionUserItem();
+        messageSessionMapper.addMessageSession(messageSession);
+        MessageSessionUserItem item1 = new MessageSessionUserItem();
         item1.setSessionId(messageSession.getSessionId());
         item1.setUserId(user.getUserId());
         messageSessionMapper.addMessageSessionUser(item1);
@@ -73,6 +73,7 @@ public class MessageSessionAPI {
         item2.setSessionId(messageSession.getSessionId());
         item2.setUserId(toUserId);
         messageSessionMapper.addMessageSessionUser(item2);
+        log.info("[addMessageSession] 新增会话成功! sessionId="+ messageSession.getSessionId() +" userId1=\" "+ user.getUserId() + " userId2=\" " + toUserId);
         resp.put("sessionId",messageSession.getSessionId());
         return resp;
     }
