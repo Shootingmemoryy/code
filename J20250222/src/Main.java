@@ -7,7 +7,7 @@ import javax.swing.tree.TreeNode;
 //二叉搜索树与双向链表
 public class Main {
     public static void main(String[] args) {
-        
+
     }
     public class TreeNode {
         int val = 0;
