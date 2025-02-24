@@ -4,4 +4,14 @@
     <select id="getLastMessageBySessionId" resultType="java.lang.String">
         select content from message where sessionId = #{sessionId} order by postTime desc limit 1
     </select>
+    <select id="getMessagesBySessionId" resultType="com.bite.java_chartoom.model.Message">
+        select messageId, fromId, username as fromName, sessionId, content
+        from user, message
+        where user.userId = message.fromId and message.sessionId = #{sessionId}
+        order by postTime desc limit 100
+    </select>
+
+    <insert id="add">
+        insert into message values(null, #{fromId}, #{sessionId}, #{content}, now())
+    </insert>
 </mapper>
