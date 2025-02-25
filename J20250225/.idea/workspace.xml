@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd75e325-f6e0-47df-8c1a-a03d2ca03517" name="Changes" comment="">
+    <list default="true" id="25ada9f8-3b3d-4042-bbf3-14842d5b0592" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/J20250225.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/model/MessageMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/model/MessageMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/mapper/MessageMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../java-chartoom/src/main/resources/mapper/MessageMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +22,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2tTyZwomQHZ1v4ZVA3q9KDQu3fd" />
+  <component name="ProjectId" id="2tWyuftYBOB2oJl0nWF1z9PUMTk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -33,6 +35,10 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "D:/Users/yhz23/Desktop/code2025/J20250225/src/Main.java",
     "vue.rearranger.settings.migration": "true"
@@ -49,12 +55,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fd75e325-f6e0-47df-8c1a-a03d2ca03517" name="Changes" comment="" />
-      <created>1740390418186</created>
+      <changelist id="25ada9f8-3b3d-4042-bbf3-14842d5b0592" name="Changes" comment="" />
+      <created>1740482349033</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1740390418186</updated>
-      <workItem from="1740390419238" duration="173000" />
+      <updated>1740482349033</updated>
+      <workItem from="1740482350043" duration="745000" />
     </task>
     <servers />
   </component>
