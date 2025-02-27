@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25ada9f8-3b3d-4042-bbf3-14842d5b0592" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/js/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/js/client.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../J20250226/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../J20250226/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../J20250226/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../J20250226/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +59,7 @@
       <updated>1740482349033</updated>
       <workItem from="1740482350043" duration="1265000" />
       <workItem from="1740563336884" duration="516000" />
+      <workItem from="1740624184482" duration="13000" />
     </task>
     <servers />
   </component>
