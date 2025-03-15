@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe16cc0e-2c08-4bc2-8b8c-6882e6a4bf67" name="Changes" comment="" />
+    <list default="true" id="fe16cc0e-2c08-4bc2-8b8c-6882e6a4bf67" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../J20250313/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../J20250313/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lottery-system" beforeDir="false" afterPath="$PROJECT_DIR$/../lottery-system" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +49,8 @@
       <updated>1741653787521</updated>
       <workItem from="1741653788536" duration="219000" />
       <workItem from="1741766937216" duration="6000" />
+      <workItem from="1741776517800" duration="51000" />
+      <workItem from="1741827657025" duration="19000" />
     </task>
     <servers />
   </component>

@@ -1,18 +1,37 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * @Shootingmemory
  * @create 2025-03-14-14:04
- *///TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+ */
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+    }
+    class Solution {
+        public List<String> generateParenthesis(int n) {
+            List<String> ans = new ArrayList<String>();
+            backtrack(ans, new StringBuilder(), 0, 0, n);
+            return ans;
+        }
+
+        public void backtrack(List<String> ans, StringBuilder cur, int open, int close, int max) {
+            if (cur.length() == max * 2) {
+                ans.add(cur.toString());
+                return;
+            }
+            if (open < max) {
+                cur.append('(');
+                backtrack(ans, cur, open + 1, close, max);
+                cur.deleteCharAt(cur.length() - 1);
+            }
+            if (close < open) {
+                cur.append(')');
+                backtrack(ans, cur, open, close + 1, max);
+                cur.deleteCharAt(cur.length() - 1);
+            }
         }
     }
 }
