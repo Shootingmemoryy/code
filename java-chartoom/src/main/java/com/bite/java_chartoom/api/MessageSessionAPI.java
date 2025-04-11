@@ -2,7 +2,7 @@ package com.bite.java_chartoom.api;
 
 
 import com.bite.java_chartoom.model.*;
-import lombok.extern.slf4j.Slf4j;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,13 +16,14 @@ import java.util.ArrayList;
 
 import java.util.HashMap;
 import java.util.List;
-@Slf4j
 @RestController
 public class MessageSessionAPI {
     @Resource
     private MessageSessionMapper messageSessionMapper;
+
     @Resource
     private MessageMapper messageMapper;
+
     @GetMapping("/sessionList")
     @ResponseBody
     public Object getMessageSessionList(HttpServletRequest req) {

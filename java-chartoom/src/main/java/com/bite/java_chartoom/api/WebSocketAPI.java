@@ -6,7 +6,8 @@ package com.bite.java_chartoom.api;
  */
 
 
-import com.bite.java_chartoom.component.OnlineUserManger;
+import com.bite.java_chartoom.component.OnlineUserManager;
+
 import com.bite.java_chartoom.model.*;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,7 @@ import java.util.List;
 @Component
 public class WebSocketAPI extends TextWebSocketHandler {
     @Autowired
-    private OnlineUserManger onlineUserManager;
+    private OnlineUserManager onlineUserManager;
 
     @Autowired
     private MessageSessionMapper messageSessionMapper;
