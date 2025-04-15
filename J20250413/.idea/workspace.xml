@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="19111adc-7ad5-4cce-96ef-d2b7da274c8d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/J20250413.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/img/Chat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/img/Chat1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/img/User.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/img/User1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/img/picture.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/img/sreach.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../网页聊天室/src/main/java/com/example/java_chatroom/JavaChatroomApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../网页聊天室/src/main/java/com/example/java_chatroom/JavaChatroomApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../网页聊天室/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/client.html" beforeDir="false" afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/client.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/css/client.css" beforeDir="false" afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/css/client.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/css/common.css" beforeDir="false" afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/css/common.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/css/login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/img/cat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/img/cat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/js/client.js" beforeDir="false" afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/js/client.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/../网页聊天室/src/main/resources/static/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../网页聊天室/企业微信.jpg" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 8
+}]]></component>
+  <component name="ProjectId" id="2vgDq6eMSk20NVQJjCJxD6yz8D6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/Users/yhz23/Desktop/2/bitproject/J20250413/src/Main.java",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="19111adc-7ad5-4cce-96ef-d2b7da274c8d" name="Changes" comment="" />
+      <created>1744558011508</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744558011508</updated>
+      <workItem from="1744558012697" duration="61000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
