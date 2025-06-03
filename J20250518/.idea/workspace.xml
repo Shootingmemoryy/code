@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d8f3d65c-b1fe-4e4e-87d4-14410d00269c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../J20250517/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../J20250517/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/JavaChatroomApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/api/FriendAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/api/MessageAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/api/MessageRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/api/MessageResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/api/MessageSessionAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/api/TestWebSocketAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/api/UserAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/api/WebSocketAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/component/OnlineUserManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/config/WebSocketConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/model/Friend.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/model/FriendMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/model/Message.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/model/MessageMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/model/MessageSession.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/model/MessageSessionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/model/MessageSessionUserItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/java/com/bite/java_chartoom/model/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/mapper/FriendMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/mapper/MessageMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/mapper/MessageSessionMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/mapper/UserMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/client.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/css/client.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/css/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/img/Chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/img/Chat1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/img/User.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/img/User1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/img/cat.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/img/picture.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/img/sreach.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/js/client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/js/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/main/resources/static/test.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../java-chartoom/src/test/java/com/bite/java_chartoom/JavaChartoomApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lottery-system" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lottery-system.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/order-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/order-service/src/main/java/org/example/OrderServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/order-service/src/main/java/org/example/config/BeanConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/order-service/src/main/java/org/example/controller/OrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/order-service/src/main/java/org/example/mapper/OrderMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/order-service/src/main/java/org/example/model/OrderInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/order-service/src/main/java/org/example/service/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/order-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/product-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/product-service/src/main/java/org/example/ProductServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/product-service/src/main/java/org/example/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/product-service/src/main/java/org/example/mapper/ProductMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/product-service/src/main/java/org/example/model/ProductInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/product-service/src/main/java/org/example/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/product-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-demo/src/main/java/com/bite/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/eureka-server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/eureka-server/src/main/java/org/example/EurekaServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/eureka-server/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/order-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/order-service/src/main/java/org/example/OrderServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/order-service/src/main/java/org/example/config/BeanConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/order-service/src/main/java/org/example/config/CustomLoadBalancerConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/order-service/src/main/java/org/example/controller/OrderController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/order-service/src/main/java/org/example/mapper/OrderMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/order-service/src/main/java/org/example/model/OrderInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/order-service/src/main/java/org/example/model/ProductInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/order-service/src/main/java/org/example/service/OrderService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/order-service/src/main/resources/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/order-service/src/main/resources/application-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/order-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/product-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/product-service/src/main/java/org/example/ProductServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/product-service/src/main/java/org/example/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/product-service/src/main/java/org/example/mapper/ProductMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/product-service/src/main/java/org/example/model/ProductInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/product-service/src/main/java/org/example/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/product-service/src/main/resources/application-dev.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/product-service/src/main/resources/application-prod.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/product-service/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../spring-cloud-eureka/src/main/java/com/bite/Main.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2xG8TcqxuWvTeNoI0K7GmTWmdxq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Users/yhz23/Desktop/code2025/J20250518/src/main/java/org/example/Main.java&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8f3d65c-b1fe-4e4e-87d4-14410d00269c" name="Changes" comment="" />
+      <created>1747553059226</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1747553059226</updated>
+      <workItem from="1747553060368" duration="3000" />
+      <workItem from="1747567467159" duration="702000" />
+      <workItem from="1747641734200" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/Main.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
